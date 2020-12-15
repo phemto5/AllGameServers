@@ -1,0 +1,12 @@
+[submodule "MinecraftDocker"]
+	path = MinecraftDocker
+	url = https://github.com/phemto5/MinecraftDocker.git
+[submodule "startbound-docker"]
+	path = startbound-docker
+	url = https://github.com/phemto5/startbound-docker.git
+[submodule "terrariaDockerServerSuite"]
+	path = terrariaDockerServerSuite
+	url = https://github.com/phemto5/terrariaDockerServerSuite.git
+[submodule "ft2ServerWithBots"]
+	path = ft2ServerWithBots
+	url = https://github.com/phemto5/ft2ServerWithBots.git
