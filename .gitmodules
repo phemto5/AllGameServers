@@ -10,3 +10,6 @@
 [submodule "ft2ServerWithBots"]
 	path = ft2ServerWithBots
 	url = https://github.com/phemto5/ft2ServerWithBots.git
+[submodule "bf2142Server"]
+	path = bf2142Server
+	url = https://github.com/phemto5/bf2142Server.git
