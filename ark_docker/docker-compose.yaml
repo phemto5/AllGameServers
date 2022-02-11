@@ -1,0 +1,32 @@
+version: '3'
+services:
+  server:
+    restart: always
+    container_name: ark_server
+    image: hermsi/ark-server:latest
+    volumes:
+      - ark_app:/app
+      - ark_bak:/home/steam/ARK-Backups
+    env_file: ark.env
+    ports:
+      # Port for connections from ARK game client
+      - "7777:7777/udp"
+      # Raw UDP socket port (always Game client port +1)
+      - "7778:7778/udp"
+      # RCON management port
+      - "27020:27020/tcp"
+      # Steam's server-list port
+      - "27015:27015/udp"
+    networks:
+      - vmnw
+volumes:
+  ark_app:
+    external:
+      name: ark_app
+  ark_bak:
+    external:
+      name: ark_bak
+networks:
+  vmnw:
+    external:
+      name: vm_nw
